@@ -99,7 +99,11 @@ Para poder crear una etiqueta en consola escribimos el comando \textbf{git tag [
         \item \textbf{git brand -d \textit{[nombre rama]}:} elimina la rama seleccionada.
         \item \textbf{git merge \textit{[nombre rama]}:} comienza el proceso de unificar varias ramas en una sola. En caso de que se hayan hecho cambios en un mismo archivo desde varias ramas (problema de concurrencia), Git lanzará mensaje de error y no podrá concretar la mezcla hasta que nosotros lo resolvamos.
         \item \textbf{git branch -M main: }asigna a qué rama se va a subir el repositorio local.
-        \item \textbf{git push -u origin main:} sube todo el contenido del repositorio local al de la dirección web.
+        \item \textbf{git push -u origin \textit{[nombre rama]}:} sube todo el contenido del repositorio local al de la dirección web. En caso de que se presente algún error al ejecutar esta instrucción, en especial con las ramas principales (\textit{main o master}), puede probar con las siguientes dos alternativas:
+        \begin{enumerate}
+        		\item \textbf{git push -f -u origin main:} alternativa al comando con solo el parámetro \textbf{-u}.
+        		\item \textbf{git push -u origin main --all:} tengo entendido que hace un \textit{push} de todo los archivos que tienen seguimiento o que están en el repositorio local, util cuando es el primer push del proyecto.
+        \end{enumerate}
     \end{itemize}
     \item Comandos para subir y clonar repositorios:
     \begin{itemize}
