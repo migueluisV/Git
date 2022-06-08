@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} %paquete para usar imágenes y figuras
+\usepackage{geometry} %paquete para trabajar con los márgenes del documento
+\usepackage{fancyhdr} %paquete para personalizar encabezado y pie de página
+\usepackage{lastpage} %paquete para referenciar páginas del documento
+\usepackage{multirow} %paquete para combinar filas y columnas en tablas
+\usepackage{array} %paquete para trabajar tablas especializadas
+\usepackage{float}
+
+\newgeometry{ %márgenes del documento
+    top=0.75in, %superior
+    bottom=0.75in, %inferior
+    outer=0.75in, %parte exterior
+    inner=1.5in, %parte interior
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Overleaf}
+\lhead{Apuntes de Git}
+\rfoot{Pagina \thepage \hspace{1pt} de \pageref{LastPage}}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\renewcommand{\theenumi}{\roman{enumi}} %números romanos en minúscula
+
+\title{Apuntes de Git\\
+\Large{Notas}}
+\author{LEMV}
+\date{Realizadas: Junio 2022}
+
+\begin{document}
+
+\renewcommand*\contentsname{Índice}
+\renewcommand{\listfigurename}{Índice de figuras}
+
+\maketitle\newpage
+\tableofcontents\newpage
+\listoffigures\newpage
+
+%agregar índice de figuras
+
+\include{texto}
+
+\end{document}
