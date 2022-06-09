@@ -141,7 +141,7 @@ Para poder crear una etiqueta en consola escribimos el comando \textbf{git tag [
 
 
 
-\section{Trabajando con Git en Visual Studio Code y consola}
+\section{Trabajando con Git en Visual Studio Code y Terminal}
 \hspace{0.55cm}Visual Studio Code (VSC a partir de ahora) cuenta, de manera nativa, con herramientas Git para poder crear repositorios locales y poderlos subir a GitHub de una manera muy visual y fácil de comprender.
 
 Primero que nada, debemos tener nuestro directorio local con nuestro proyecto en el sistema operativo, en VSC, es recomendable crear \textbf{áreas de trabajo} o \textbf{workspaces} para nuestro directorio local, en caso de que se cierre accidentalmente VSC, cargamos nuestro área de trabajo y todo estará justo como lo dejamos.
@@ -165,7 +165,7 @@ Las siguientes \textit{Figuras} muestran como crear un \textit{workspace}:
     \begin{center}
         \caption{Autorizando directorio local en VSC}
         \label{fig: 6}
-        \includegraphics[width=10cm]{capturas/creando_w3.png}
+        \includegraphics[width=12cm]{capturas/creando_w3.png}
     \end{center}
 \end{figure}
 \begin{figure}[H]
@@ -203,7 +203,7 @@ Para \textbf{abrir} un workspace en VSC se siguen las siguientes \textit{Figuras
 
 En la misma pestaña \textbf{File} se encuentra la opción para abrir un workspace desde un archivo, como se ve en la \textit{Figura 9}, tendremos que buscar nuestro archivo de .code-workspace donde lo almacenamos, como podemos apreciar en la \textit{Figura 10}.
 
-Todo el proceso anterior fue para poder cargar nuestro directorio local a VSC, ahora, es momento de que Git le comience a dar seguimiento. Agregamos al workspace un archivo \textit{intdex.html}. Si recordamos como fue realizado ese proceso en consola, son prácticamente los mismos comandos, pero VSC te lo muestra de una manera más visual: la \textit{Figura 11} muestra que podemos abrir terminales (consolas) en nuestro editor de texto.
+Todo el proceso anterior fue para poder cargar nuestro directorio local a VSC, ahora, es momento de que Git le comience a dar seguimiento. Agregamos al workspace un archivo \texttt{intdex.html}. Si recordamos como fue realizado ese proceso en consola, son prácticamente los mismos comandos, VSC cuenta con una consola propia llamada \textbf{terminal}: la \textit{Figura 11} muestra que podemos abrir terminales (consolas) en nuestro editor de texto.
 \begin{figure}[H]
     \begin{center}
         \caption{Abriendo terminal en VSC}
@@ -212,7 +212,7 @@ Todo el proceso anterior fue para poder cargar nuestro directorio local a VSC, a
     \end{center}
 \end{figure}
 
-En esta terminal, escribiremos los comandos git vistos anteriormente, comenzaremos con \textbf{git init}. Vemos en la \textit{Figura 12} que el explorador de nuestro workspace se ha coloreado en verde, y han aparecido algunas letras al lado de los archivos, estas serán explicadas más adelante.
+En esta terminal, escribiremos los comandos Git vistos anteriormente, comenzaremos con \textbf{git init}. Vemos en la \textit{Figura 12} que el explorador de nuestro workspace se ha coloreado en verde, y han aparecido algunas letras al lado de los archivos, estas serán explicadas más adelante.
 \begin{figure}[H]
     \begin{center}
         \caption{Workspace con Git sin seguimiento}
@@ -221,7 +221,7 @@ En esta terminal, escribiremos los comandos git vistos anteriormente, comenzarem
     \end{center}
 \end{figure}
 
-Entonces, debemos agregar \textit{index.html} al área de ensayo, dándole seguimiento, con el comando \textbf{git add index.html}, una vez hecho esto, podemos realizar un primer commit (aunque el arcivo esté vacío) usando el comando \textbf{git commit -m "Primer avance"}, como se ve en la \textit{Figura 13}.
+Entonces, debemos agregar \texttt{index.html} al área de ensayo, dándole seguimiento, con el comando \textbf{git add index.html}, una vez hecho esto, podemos realizar un primer commit (aunque el archivo esté vacío) usando el comando \textbf{git commit -m "Primer avance"}, como se ve en la \textit{Figura 13}.
 \begin{figure}[H]
     \begin{center}
         \caption{Seguimiento y commit de un archivo}
@@ -230,10 +230,10 @@ Entonces, debemos agregar \textit{index.html} al área de ensayo, dándole segui
     \end{center}
 \end{figure}
 
-Si nos fijamos, encerramos una opción en el menú lateral izquierdo con un cuadrado azul, esta opción nos muestra todos aquellos archivos que no tienen seguimiento o que han sido modificados recientemente, por lo que necesitan que se les realice alguna acción o tarea, esta opción es como una lista de archivos a los cuales darles seguimiento en VSC, cuando usamos el comando \textbf{git init}, esta opción tenía 2 tareas o 2 archivos con pendiente para realizar seguimiento: \textit{index.html} y \textit{Proyecto.code-workspace}, al darle seguimiento a index.html nada más, esta lista de tareas bajó a 1, al segundo archivo mencionado no se le hará seguimiento. Vemos entonces, en la \textit{Figura 14} que en nuestro explorador de workspace, el archivo index.html ya no tiene la letra U a su costado, ni está coloreado de verde, esto es porque ya tiene seguimiento, al realizar alguna modificación, este archivo volverá a estar coloreado.
+Si nos fijamos, encerramos una opción en el menú lateral izquierdo con un cuadrado azul, esta opción nos muestra todos aquellos archivos que no tienen seguimiento o que han sido modificados recientemente, por lo que necesitan que se les realice alguna acción o tarea, esta opción es como una lista de archivos a los cuales darles seguimiento en VSC, la cual nombraremos como \textbf{Panel de tareas de Git}, cuando usamos el comando \textbf{git init}, esta opción tenía 2 tareas o 2 archivos con pendiente para realizar seguimiento: \texttt{index.html} y \texttt{Proyecto.code-workspace}, al darle seguimiento a \texttt{index.html} nada más, esta lista de tareas bajó a 1, al segundo archivo mencionado no se le hará seguimiento. Vemos entonces, en la \textit{Figura 14} que en nuestro explorador de workspace, el archivo \texttt{index.html} ya no tiene la letra U a su costado, ni está coloreado de verde, esto es porque ya tiene seguimiento, al realizar alguna modificación, este archivo volverá a estar coloreado.
 \begin{figure}[H]
     \begin{center}
-        \caption{Seguimiento y commit de un archivo}
+        \caption{Explorando el Explorador de archivos de VSC con Git}
         \label{fig: 14}
         \includegraphics[width=12cm]{capturas/git add git commit.png}
     \end{center}
@@ -242,7 +242,7 @@ Si nos fijamos, encerramos una opción en el menú lateral izquierdo con un cuad
 Ahora, realizaremos una modificación para ver el aspecto de VSC (\textit{Figura 15}):
 \begin{figure}[H]
     \begin{center}
-        \caption{Seguimiento y commit de un archivo}
+        \caption{Explorando el Panel de tareas de Git}
         \label{fig: 15}
         \includegraphics[width=12cm]{capturas/modificaciones.png}
     \end{center}
@@ -280,25 +280,25 @@ Las letras que aparecen significan:
         \begin{center}
             \caption{Creando una rama con VSC y su barra de tareas}
             \label{fig: 17}
-            \includegraphics[width=\textwidth]{capturas/creando_b1.png}
+            \includegraphics[width=14cm]{capturas/creando_b1.png}
         \end{center}
     \end{figure}
     
-    Al dar clic en \textbf{Create new branch...} nos pedirá el nombre de esta, una vez escrito, damos ENTER para continuar y la rama se ha creado, VSC nos situa en la rama recién creada para comenzar a trabajar en ella directamente. Si volvemos a dar clic sobre el nombre de la rama en la barra de tareas, él menú desplegado, además de darnos la posibilidad de crear otra rama, nos muestra las dos existentes hasta el momento, como se ve en la \textit{Figura 18}:
+    Al dar clic en \textbf{Create new branch...} nos pedirá el nombre de esta, una vez escrito, damos ENTER para continuar y la rama se ha creado, VSC nos situa en la rama recién creada para comenzar a trabajar en ella directamente. Si volvemos a dar clic sobre el nombre de la rama en la barra de tareas, en el menú desplegado, además de darnos la posibilidad de crear otra rama, nos muestra las dos existentes hasta el momento, como se ve en la \textit{Figura 18}:
     \begin{figure}[H]
         \begin{center}
             \caption{Cambiando entre ramas con VSC}
             \label{fig: 18}
-            \includegraphics[width=\textwidth]{capturas/abriendo_b1.png}
+            \includegraphics[width=14cm]{capturas/abriendo_b1.png}
         \end{center}
     \end{figure}
     
-    \item \textbf{Con el menú de tareas lateral y sus tres puntos}: esta opción es un poco más completa, y nos situa en un espcio donde aparecen muchas más opciones para trabajar con Git. Nos vamos a la opción de tareas de Git, en este punto, tenemos una tarea pendiente, que es darle seguimiento al archivo de workspace de nuestro proyecto, pero lo dejaremos como está, vemos que encima de \textbf{Changes} hay una caja de texto para escribir algo, encima de esta, hay un botón con la forma de tres puntos, si damos clic a dicho botón, se nos despliegan múltiples características Git que podemos usar, entre ellas, está la opción \textbf{Branch}, si la seleccionamos, podemos encontrar la opción de \textbf{Create branch...}, además de las opciones para unir ramas, renombrar alguna, borrar, entre más, como vemos en la \textit{Figura 19}:
+    \item \textbf{Con el Panel de tareas de Git y sus tres puntos}: esta opción es un poco más completa, y nos situa en un espacio donde aparecen muchas más opciones para trabajar con Git. Nos vamos al Panel tareas de Git, en este punto, tenemos una tarea pendiente, que es darle seguimiento al archivo de workspace de nuestro proyecto, pero lo dejaremos como está, vemos que encima de \textbf{Changes} hay una caja de texto para escribir algo, encima de esta, hay un botón con la forma de tres puntos, si damos clic a dicho botón, se nos despliegan múltiples características Git que podemos usar, entre ellas, está la opción \textbf{Branch}, si la seleccionamos, podemos encontrar la opción de \textbf{Create branch...}, además de las opciones para unir ramas, renombrar alguna, borrar, entre más, como vemos en la \textit{Figura 19}:
     \begin{figure}[H]
         \begin{center}
             \caption{Creando una rama con VSC y la opción de tareas}
             \label{fig: 19}
-            \includegraphics[width=\textwidth]{capturas/creando_b2.png}
+            \includegraphics[width=14cm]{capturas/creando_b2.png}
         \end{center}
     \end{figure}
 \end{enumerate}
@@ -306,16 +306,16 @@ Las letras que aparecen significan:
 
 
 \subsection{Agregando archivos al área de ensayo}
-\hspace{0.55cm}Nos quedaremos en la rama diseñador1. Este punto es bastante simple, si realizo alguna modificación en \textit{index.html}, sabemos que este archivo aparecerá en el menú de tareas de Git, si situamos el puntero del mouse encima del archivo con letra M, veremos que aparecen varias opciones, entre ellas, un icono de Más (+), el cual realiza la tarea de agregar el archivo al área de ensayo, lo único que debemos hacer es darle clic, y nuestro archivo tendrá seguimiento (\textit{Figura 20}).
+\hspace{0.55cm}Nos quedaremos en la rama diseñador1. Este punto es bastante simple, si realizo alguna modificación en \texttt{index.html}, sabemos que este archivo aparecerá en el Panel de tareas de Git, si situamos el puntero del mouse encima del archivo con letra M, veremos que aparecen varias opciones, entre ellas, un icono de Más (+), el cual realiza la tarea de agregar el archivo al área de ensayo, lo único que debemos hacer es darle clic, y nuestro archivo tendrá seguimiento (\textit{Figura 20}).
 \begin{figure}[H]
     \begin{center}
         \caption{Agregando archivos al área de ensayo con VSC}
         \label{fig: 20}
-        \includegraphics[width=10cm]{capturas/seguimiento_archivos.png}
+        \includegraphics[width=9cm]{capturas/seguimiento_archivos.png}
     \end{center}
 \end{figure}
 
-El archivo \textit{index.html} ya tiene seguimiento, lo vemos encerrado en el recuadro azul, mientras que el archivo de workspace no lo tiene, por eso aparece el botón + entre sus opciones.
+El archivo \texttt{index.html} ya tiene seguimiento, lo vemos encerrado en el recuadro azul en la sección \textbf{Staged Changes}, mientras que el archivo de workspace no lo tiene, por eso aparece el botón + entre sus opciones.
 
 
 
@@ -325,7 +325,7 @@ El archivo \textit{index.html} ya tiene seguimiento, lo vemos encerrado en el re
     \begin{center}
         \caption{Commit con caja de texto}
         \label{fig: 21}
-        \includegraphics[width=10cm]{capturas/commits1.png}
+        \includegraphics[width=9cm]{capturas/commits1.png}
     \end{center}
 \end{figure}
 
@@ -338,10 +338,10 @@ En cambio, si repetimos la acción de escribir el mensaje, teniendo archivos con
     \end{center}
 \end{figure}
 
-Y si recordamos cómo crear ramas con VSC, sabremos que si damos clic al botónd de los tres puntos, ahí también aparece la opción de commits.
+Y si recordamos cómo crear ramas con VSC, sabremos que si damos clic al botón de los tres puntos, ahí también aparece la opción de commits.
 
 \subsection{Unir ramas y conflictos de concurrencia}
-\hspace{0.55cm}Una vez terminado el trabajo en dos ramas distintas, damos clic al botón de los tres puntos en el menú de tareas, dentro de la opción \textbf{Branch}, encontramos la opción \textbf{Merge branch...}, VSC toma la rama donde estamos trabajando como rama inicial, y nos despliega una lista de las demás ramas para unirlas, como vemos en la \textit{Figura 23} y \textit{Figura 24}:
+\hspace{0.55cm}Una vez terminado el trabajo en dos ramas distintas, en el Panel de tareas de Git, damos clic al botón de los tres puntos en el menú de tareas, dentro de la opción \textbf{Branch}, encontramos la opción \textbf{Merge branch...}, VSC toma la rama donde estamos trabajando como rama inicial, y nos despliega una lista de las demás ramas para unirlas, como vemos en la \textit{Figura 23} y \textit{Figura 24}:
 \begin{figure}[H]
     \begin{center}
         \caption{Uniendo varias ramas}
@@ -353,16 +353,16 @@ Y si recordamos cómo crear ramas con VSC, sabremos que si damos clic al botónd
     \begin{center}
         \caption{Selección de ramas para unir}
         \label{fig: 24}
-        \includegraphics[width=\textwidth]{capturas/merge2.png}
+        \includegraphics[width=12cm]{capturas/merge2.png}
     \end{center}
 \end{figure}
 
-Esto en caso de que no hubiera ningún conflicto de concurrencia, pongamos la siguiente situación: en \textbf{master}, agregamos más texto al \textbf{Header 1} y hacemos un commit, en \textbf{diseñador1} volvemos a hacer cambios en el \textit{Header 1} y volvemos a realizar un commit, finalmente, realizamos el proceso de unión de ramas, sin embargo, hicimos un problema de concurrencia a propósito para ver como lo trata VSC en la \textit{Figura 25}:
+Esto en caso de que no hubiera ningún conflicto de concurrencia, pongamos la siguiente situación: en \textbf{master}, agregamos más texto al \textbf{Header 1} al archivo \texttt{index.html} y hacemos un commit, en \textbf{diseñador1} volvemos a hacer cambios en el \textit{Header 1} en el mismo archivo y volvemos a realizar un commit, finalmente, realizamos el proceso de unión de ramas, sin embargo, hicimos un problema de concurrencia a propósito para ver como lo trata VSC en la \textit{Figura 25}:
 \begin{figure}[H]
     \begin{center}
         \caption{Uniendo varias ramas con un problema de concurrencia}
         \label{fig: 25}
-        \includegraphics[width=10cm]{capturas/merge3.png}
+        \includegraphics[width=12cm]{capturas/merge3.png}
     \end{center}
 \end{figure}
 
@@ -373,7 +373,7 @@ Una vez escogida la opción, VSC da seguimiento al archivo donde ocurrió el pro
     \begin{center}
         \caption{Uniendo varias ramas después de un problema de concurrencia}
         \label{fig: 26}
-        \includegraphics[width=10cm]{capturas/merge4.png}
+        \includegraphics[width=12cm]{capturas/merge4.png}
     \end{center}
 \end{figure}
 \textit{Nota}: en caso de que se presente algún error para realizar el commit en este punto, puede poner el puntero del mouse encima del archivo que tuvo los problemas de concurrencia y dar clic al botón de +, para darle seguimiento.
