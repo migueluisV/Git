@@ -353,7 +353,7 @@ Y si recordamos cómo crear ramas con VSC, sabremos que si damos clic al botón 
     \begin{center}
         \caption{Selección de ramas para unir}
         \label{fig: 24}
-        \includegraphics[width=12cm]{capturas/merge2.png}
+        \includegraphics[width=14cm]{capturas/merge2.png}
     \end{center}
 \end{figure}
 
@@ -381,7 +381,7 @@ Una vez escogida la opción, VSC da seguimiento al archivo donde ocurrió el pro
 
 
 \subsection{Sincronizando y subiendo proyecto de VSC a GitHub}
-\hspace{0.55cm}Podemos subir nuestro proyecto a GitHub de dos formas, desde el \textbf{panel de tareas de Git} y desde la \textbf{barra de tareas de VSC}, en nuestra situación, no hemos ingresado ninguna cuenta de GitHub ni enlace de repositorio, por lo que, para ambas opciones, VSC nos pedirá que ingresemos la información mencionada. Los recuadros azules en la \textit{Figura 27} muestran la ubicación de las dos opciones para subir proyectos desde VSC:
+\hspace{0.55cm}Podemos subir nuestro proyecto a GitHub de dos formas, desde el \textbf{Panel de tareas de Git} y desde la \textbf{barra de tareas de VSC}, en nuestra situación, no hemos ingresado ninguna cuenta de GitHub ni enlace de repositorio, por lo que, para ambas opciones, VSC nos pedirá que ingresemos la información mencionada. Los recuadros azules en la \textit{Figura 27} muestran la ubicación de las dos opciones para subir proyectos desde VSC:
 \begin{figure}[H]
     \begin{center}
         \caption{Subir proyectos a GitHub desde VSC}
@@ -394,28 +394,28 @@ En caso de que, en tu navegador estés loggeado en GitHub, VSC solamente te pedi
 
 Una vez iniciada sesión en GitHub con VSC, este último te preguntará a qué tipo de repositorio subir tu proyecto local: si a un repositorio público o privado, escoge alguna opción, posterior a ello, comenzará el proceso para subir el proyecto local a GitHub, debes tener en cuenta de que, cuando se suba, VSC creará un repositorio en GitHub con el mismo nombre del proyecto local y ahí lo publicará.
 
-Si realizamos alguna modificación en el archivo \textit{index.html} y realizamos un commit nuevo, para subir este cambio a GitHub, presionamos alguna de las dos opciones mostradas en la \textit{Figura 28} para subir nuestros cambios, a esta acción se le conoce como \textbf{push}:
+Si realizamos alguna modificación en el archivo \texttt{index.html} y realizamos un commit nuevo, para subir este cambio a GitHub, presionamos alguna de las dos opciones mostradas en la \textit{Figura 28} para subir nuestros cambios, a esta acción se le conoce como \textbf{push}:
 \begin{figure}[H]
     \begin{center}
         \caption{Subir cambios del proyectos a GitHub desde VSC}
         \label{fig: 28}
-        \includegraphics[width=10cm]{capturas/subir_proyecto2.png}
+        \includegraphics[width=7cm]{capturas/subir_proyecto2.png}
     \end{center}
 \end{figure}
 
-Si previamente ya teníamos un repositorio creada en GitHub donde deseamos que se suba nuestro proyecto local, podemos acudir a la \textbf{Paleta de comandos} para poder obtener acceso a los comandos que ya conocemos de Git de una forma más visual y fácil de comprender. Abrimos la \textit{pPaleta de comandos} yéndonos al opción \textbf{View} en la barra superior de VSC, la primer opción desplegada es la que requerimos. Una vez aparece la barra, escribimos la palabra "git" y, en ese momento, se nos abren todos los comandos de Git permitidos en VSC, estando en ese menú, podemos buscar el comando \textbf{Git: Add Remote...}, ahí escribiremos la dirección del repositorio que ya tenemos creado, como vemos en la \textit{Figura 29} y \textit{30}.
+Si previamente ya teníamos un repositorio creada en GitHub donde deseamos que se suba nuestro proyecto local, podemos acudir a la \textbf{Paleta de comandos} de VSC para poder obtener acceso a los comandos que ya conocemos de Git de una forma más visual y fácil de comprender. Abrimos la \textit{Paleta de comandos} yéndonos al opción \textbf{View} en la barra superior de VSC, la primer opción desplegada es la que requerimos. Una vez aparece la barra, escribimos la palabra "git" y, en ese momento, se nos abren todos los comandos de Git permitidos en VSC, estando en ese menú, podemos buscar el comando \textbf{Git: Add Remote...}, ahí escribiremos la dirección del repositorio que ya tenemos creado, como vemos en la \textit{Figura 29} y \textit{30}.
 \begin{figure}[H]
     \begin{center}
         \caption{Subir proyecto a GitHub con la Paleta de comandos}
         \label{fig: 29}
-        \includegraphics[width=10cm]{capturas/subir_proyecto3.png}
+        \includegraphics[width=14cm]{capturas/subir_proyecto3.png}
     \end{center}
 \end{figure}
 \begin{figure}[H]
     \begin{center}
         \caption{Agregar dirección de repositorio GitHub a VSC}
         \label{fig: 30}
-        \includegraphics[width=10cm]{capturas/subir_proyecto4.png}
+        \includegraphics[width=14cm]{capturas/subir_proyecto4.png}
     \end{center}
 \end{figure}
 
@@ -424,13 +424,13 @@ Una vez agregado el repositorio a VSC, volvemos a abrir la Paleta de comandos, e
     \begin{center}
         \caption{Subir proyecto a GitHub en un repositorio existente}
         \label{fig: 31}
-        \includegraphics[width=10cm]{capturas/subir_proyecto5.png}
+        \includegraphics[width=14cm]{capturas/subir_proyecto5.png}
     \end{center}
 \end{figure}
 
-Como vemos, para subir un proyecto local a GitHub primero debemos estar loggeados en VSC con nuestra cuenta de GitHub, con esa información, VSC detecta crea automáticamente un repositorio online con el mismo nombre que el proyecto local, subiendo ahí nuestro trabajo, sin embargo, si buscamos que se suba a otro repositorio, debemos agregar la dirección de este a VSC con el comando \textbf{Add Remote...} y, posterior a ello, utilizar el comando \textbf{Push To...}.
+Como vemos, para subir un proyecto local a GitHub primero debemos estar loggeados en VSC con nuestra cuenta de GitHub, con esa información, VSC crea automáticamente un repositorio online con el mismo nombre que el proyecto local, subiendo ahí nuestro trabajo, sin embargo, si buscamos que se suba a otro repositorio, debemos agregar la dirección de este a VSC con el comando \textbf{Add Remote...} y, posterior a ello, utilizar el comando \textbf{Push To...}.
 
-Sabemos que se pueden editar archivos en GitHub, si en nuestro archivo \textit{index.html} le agregamos un parráfo desde GitHub y queremos que aparezca en VSC, simplemente debemos darle clic al ícono de \textbf{sincronización} en la \textbf{barra de tareas} (\textit{Figura 32}). Para que aparezca el cambio de VSC a GitHub, realizamos el commit con nuestros cambios y realizamos un push a el repositorio que deseemos.
+Sabemos que se pueden editar archivos en GitHub, si en nuestro archivo \texttt{index.html} le agregamos un parráfo desde GitHub y queremos que aparezca en VSC, simplemente debemos darle clic al ícono de \textbf{sincronización} en la \textbf{barra de tareas} (\textit{Figura 32}). Para que aparezca el cambio de VSC a GitHub, realizamos el commit con nuestros cambios y realizamos un push a el repositorio que deseemos.
 \begin{figure}[H]
     \begin{center}
         \caption{Subir proyecto a GitHub en un repositorio existente}
@@ -444,12 +444,12 @@ Si queremos ahorrarnos el paso de la creación de un repositorio automático par
 
 
 \subsection{Clonación de proyectos}
-Con la dirección del repositorio que queremos pasar de GitHub a VSC, nos vamos al editor de texto, en el \textbf{Panel de tareas de Git} o \textbf{Paleta de comandos} buscamos la operación \textbf{Clone}, como vemos en la \textit{Figura 33}.
+\hspace{0.55cm}Con la dirección del repositorio que queremos pasar de GitHub a VSC, nos vamos al editor de texto, en el \textbf{Panel de tareas de Git} o \textbf{Paleta de comandos} buscamos la operación \textbf{Clone}, como vemos en la \textit{Figura 33}.
 \begin{figure}[H]
     \begin{center}
         \caption{Opciones para clonar un repositorio online a local}
         \label{fig: 33}
-        \includegraphics[width=10cm]{capturas/clone.png}
+        \includegraphics[width=14cm]{capturas/clone.png}
     \end{center}
 \end{figure}
 
@@ -465,7 +465,7 @@ En ambas situaciones, debemos escribir en la caja de texto la dirección \textbf
     \begin{center}
         \caption{Componentes y funciones de GitHub}
         \label{fig: 34}
-        \includegraphics[width=10cm]{capturas/github.png}
+        \includegraphics[width=14cm]{capturas/github.png}
     \end{center}
 \end{figure}
 
@@ -486,7 +486,7 @@ Donde:
 
 
 \section{Fork}
-\hspace{0.55cm}Si recordamos el concepto de \textit{ramas}, sabemos que es la copia de los archivos de nuestro proyecto para que más de una persona pueda trabajar en nuestro repositorio, al final, se mezclan ambas ramas para que se unifique el proyecto, entonces, el concepto de \textbf{fork} va más allá de una rama, sigue la misma lógica que las ramas, pero a escala de repositorios. Un \textit{fork} es la copia del repositorio de un usuario en nuestra cuenta o cuenta de algún usuario que se haya visto interesado en el repositorio que busca copiar, el usuario original puede realizar commits y modificaciones en su trabajo original, mientras que el usuario que tiene una copia del repositorio puede clonarlo y hacer lo mismo, el usuario con el repositorio fork puede realizar una solicitud de merge al usuario propietario y este puede aceptarla, comentarla, revisarla, compararla o declinarla. La \textit{Figura 35} muestra como se ven un repositorio propietario y uno fork:
+\hspace{0.55cm}Si recordamos el concepto de \textit{ramas}, sabemos que es la copia de los archivos de nuestro proyecto para que más de una persona pueda trabajar en nuestro repositorio, al final, se mezclan ambas ramas para que se unifique el proyecto, entonces, el concepto de \textbf{fork} va más allá de una rama, sigue la misma lógica, pero a escala de repositorios. Un \textit{fork} es la copia del repositorio de un usuario en nuestra cuenta o cuenta de algún usuario que se haya visto interesado en el repositorio que busca copiar, el usuario original puede realizar commits y modificaciones en su trabajo original, mientras que el usuario que tiene una copia del repositorio puede clonarlo y hacer lo mismo, el usuario con el repositorio fork puede realizar una solicitud de merge al usuario propietario y este puede aceptarla, comentarla, revisarla, compararla o declinarla. La \textit{Figura 35} muestra como se ven un repositorio propietario y uno fork:
 \begin{figure}[H]
     \begin{center}
         \caption{Ejemplificación de un repositorio propietario y uno fork}
@@ -500,25 +500,25 @@ Si vamos a un repositorio nuestro en GitHub en la esquina superior derecha, apar
     \begin{center}
         \caption{Ubicación del botón Fork en GitHub}
         \label{fig: 36}
-        \includegraphics[width=10cm]{capturas/fork2.png}
+        \includegraphics[width=14cm]{capturas/fork2.png}
     \end{center}
 \end{figure}
 \begin{figure}[H]
     \begin{center}
         \caption{Menú de Fork}
         \label{fig: 37}
-        \includegraphics[width=10cm]{capturas/fork3.png}
+        \includegraphics[width=14cm]{capturas/fork3.png}
     \end{center}
 \end{figure}
 
-Como es nuestro propio proyecto, no podemos crear un fork, sin embargo, si estuviésemos en una cuenta distinta, buscamos nuestro usuario, y buscamos el repositorio en que estamos interesados, el mismo botón \textbf{Fork} está ubicado donde mismo, le damos clic y debe aparecer un texto para realizar un \textit{fork} a los repositorios de la cuenta externa.
+Como es nuestro propio proyecto, no podemos crear un fork, sin embargo, si estuviésemos en una cuenta distinta, buscamos nuestro usuario, y buscamos el repositorio en que estamos interesados, el botón \textbf{Fork} está ubicado donde mismo, le damos clic y debe aparecer un texto para realizar un \textit{fork} a los repositorios de la cuenta externa.
 
-Algo que se debe tomar en consideración es que previamente, a lo largo de este documento, ingresamos las credenciales de GitHub de una cuenta (cuenta A), ya sea en la consola o en VSC para poder hacer \textbf{push} y \textbf{commits} de nuestros proyectos a GitHub, entonces, la información de la cuenta A fue almacenada en el sistema donde estemos trabajando, en nuestro caso, Windows, así que, si realizamos un fork de un repositorio A de la cuenta A a una cuenta B (repositorio B) en GitHub, debemos de salir de la cuenta A para ingresar como la cuenta B en nuestra computadora para trabajar el repositorio B, para hacer esto, debemos \textbf{eliminar las credenciales} del sistema, revise el siguiente subtítulo.
+Algo que se debe tomar en consideración es que previamente, a lo largo de este documento, ingresamos las credenciales de GitHub de una cuenta (cuenta A), ya sea en la consola o en VSC para poder hacer \textbf{push} y \textbf{commits} de nuestros proyectos a GitHub, entonces, la información de la cuenta A fue almacenada en el sistema operativo donde estemos trabajando, en nuestro caso, Windows, así que, si realizamos un fork de un repositorio A de la cuenta A a una cuenta B (repositorio B) en GitHub, debemos de salir de la cuenta A en nuestro sistema operativo para ingresar como la cuenta B en nuestra computadora para trabajar el repositorio B, para hacer esto, debemos \textbf{eliminar las credenciales} del sistema, revise el siguiente subtítulo.
 
 
 
 \subsection{Eliminando credenciales de GitHub de Windows}
-Damos clic en el botón de \textbf{Windows}, abrimos la \textbf{Configuración}, escribimos en la barra de búsqueda "credenciales" y abrimos el programa \textbf{Administrador de credenciales}, abierto el programa, damos clic a la opción \textbf{Credenciales de Windows} y buscamos aquella que se llame \textbf{git:https://github.com}, simplemente damos clic sobre esta credencial, se abre un pequeño menú y damos clic a la opción \textbf{Quitar}, como se ve en la \textit{Figura 38}.
+\hspace{0.55cm}Damos clic en el botón de \textbf{Windows}, abrimos la \textbf{Configuración}, escribimos en la barra de búsqueda "credenciales" y abrimos el programa \textbf{Administrador de credenciales}, abierto el programa, damos clic a la opción \textbf{Credenciales de Windows} y buscamos aquella que se llame \textbf{git:https://github.com}, simplemente damos clic sobre esta credencial, se abre un pequeño menú y damos clic a la opción \textbf{Quitar}, como se ve en la \textit{Figura 38}.
 \begin{figure}[H]
     \begin{center}
         \caption{Eliminando credencial de GitHub en Windows}
@@ -527,4 +527,4 @@ Damos clic en el botón de \textbf{Windows}, abrimos la \textbf{Configuración},
     \end{center}
 \end{figure}
 
-Con esto, podemos volver a iniciar sesión en Git o VSC con una cuenta B o diferente a la cuenta A y, como resultado, poder trabajar los repositorios de la cuenta B o repositorios \textit{fork}.
+Con esto, podemos volver a iniciar sesión en GitHub, tanto en consola como en VSC, con una cuenta B o diferente a la cuenta A y, como resultado, poder trabajar los repositorios de la cuenta B o repositorios \textit{fork}.
